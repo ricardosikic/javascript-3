@@ -6,6 +6,8 @@ let array = ['uno', 'dos', 'tres', 'cuatro'];
 
 let caso = array[Math.floor(Math.random() * array.length)];
 
+let puntos = 0;
+
 switch(caso) {
   case 'uno':
   console.log(`encontraste el ${caso}`);
@@ -16,7 +18,8 @@ switch(caso) {
   break;
 
   case 'tres':
-  console.log(`encontraste el ${caso}`);
+  puntos ++;
+  console.log(`encontraste el ${caso}, ${puntos}`);
   break;
 
   case 'cuatro':
